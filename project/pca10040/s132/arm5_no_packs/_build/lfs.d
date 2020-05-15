@@ -1,0 +1,10 @@
+.\_build\lfs.o: ..\..\..\..\littlefs-master\littlefs-master\lfs.c
+.\_build\lfs.o: ..\..\..\..\littlefs-master\littlefs-master\lfs.h
+.\_build\lfs.o: D:\program\keil5\install\ARM\ARMCC\Bin\..\include\stdint.h
+.\_build\lfs.o: D:\program\keil5\install\ARM\ARMCC\Bin\..\include\stdbool.h
+.\_build\lfs.o: ..\..\..\..\littlefs-master\littlefs-master\lfs_util.h
+.\_build\lfs.o: D:\program\keil5\install\ARM\ARMCC\Bin\..\include\string.h
+.\_build\lfs.o: D:\program\keil5\install\ARM\ARMCC\Bin\..\include\stdlib.h
+.\_build\lfs.o: D:\program\keil5\install\ARM\ARMCC\Bin\..\include\assert.h
+.\_build\lfs.o: D:\program\keil5\install\ARM\ARMCC\Bin\..\include\stdio.h
+.\_build\lfs.o: D:\program\keil5\install\ARM\ARMCC\Bin\..\include\inttypes.h

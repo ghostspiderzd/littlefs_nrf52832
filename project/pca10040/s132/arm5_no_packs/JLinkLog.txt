@@ -1,0 +1,32 @@
+T2044 18842:562 SEGGER J-Link V6.32i Log File (0000ms, 2649ms total)
+T2044 18842:562 DLL Compiled: Jul 24 2018 15:19:55 (0000ms, 2649ms total)
+T2044 18842:562 Logging started @ 2020-04-23 14:16 (0000ms, 2649ms total)
+T2044 18842:562 JLINK_SetWarnOutHandler(...) (0000ms, 2649ms total)
+T2044 18842:562 JLINK_OpenEx(...)
+Firmware: J-Link V9 compiled Apr 20 2018 16:47:26
+Hardware: V9.40
+S/N: 59408270
+Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+TELNET listener socket opened on port 19021WEBSRV 
+Starting webserver (0015ms, 2664ms total)
+T2044 18842:562 WEBSRV Webserver running on local port 19080 (0015ms, 2664ms total)
+T2044 18842:562   returns O.K. (0015ms, 2664ms total)
+T2044 18842:577 JLINK_GetEmuCaps()  returns 0xB9FF7BBF (0000ms, 2664ms total)
+T2044 18842:577 JLINK_TIF_GetAvailable(...) (0001ms, 2665ms total)
+T2044 18842:578 JLINK_SetErrorOutHandler(...) (0000ms, 2665ms total)
+T2044 18842:578 JLINK_ExecCommand("ProjectFile = "E:\CompanyFile\Continuousbloodpressure\code_v5\project\pca10040\s132\arm5_no_packs\JLinkSettings.ini"", ...).   returns 0x00 (0002ms, 2667ms total)
+T2044 18842:584 JLINK_ExecCommand("Device = nRF52832_xxAA", ...). Device "NRF52832_XXAA" selected.  returns 0x00 (0002ms, 2669ms total)
+T2044 18842:586 JLINK_ExecCommand("DisableConnectionTimeout", ...).   returns 0x01 (0000ms, 2669ms total)
+T2044 18842:586 JLINK_GetHardwareVersion()  returns 0x16F30 (0000ms, 2669ms total)
+T2044 18842:586 JLINK_GetDLLVersion()  returns 63209 (0000ms, 2669ms total)
+T2044 18842:586 JLINK_GetFirmwareString(...) (0000ms, 2669ms total)
+T2044 18842:590 JLINK_GetDLLVersion()  returns 63209 (0000ms, 2669ms total)
+T2044 18842:590 JLINK_GetCompileDateTime() (0000ms, 2669ms total)
+T2044 18842:591 JLINK_GetFirmwareString(...) (0000ms, 2669ms total)
+T2044 18842:592 JLINK_GetHardwareVersion()  returns 0x16F30 (0000ms, 2669ms total)
+T2044 18842:600 JLINK_TIF_Select(JLINKARM_TIF_SWD)  returns 0x00 (0000ms, 2669ms total)
+T2044 18842:601 JLINK_SetSpeed(5000) (0000ms, 2670ms total)
+T2044 18842:601 JLINK_GetId() >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF> >0x10B TIF> >0x10F TIF>  returns 0x00000000 (0797ms, 3467ms total)
+T2044 18844:558 JLINK_Close() (0012ms, 3479ms total)
+T2044 18844:558  (0012ms, 3479ms total)
+T2044 18844:558 Closed (0012ms, 3479ms total)

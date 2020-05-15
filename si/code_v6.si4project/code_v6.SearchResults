@@ -1,0 +1,6 @@
+---- rxflag Matches (5 in 1 files) ----
+main.c (project\pca10040\s132\arm5_no_packs) line 110 : unsigned char rxflag = 0;
+timer_spi_event_handler in main.c (project\pca10040\s132\arm5_no_packs) : 	rxflag = 1;
+timer_spi_event_handler in main.c (project\pca10040\s132\arm5_no_packs) : 	rxflag = 0;
+spi_sample_loop in main.c (project\pca10040\s132\arm5_no_packs) : 		if((rxflag == 1) && (gCmdflag == 1))
+spi_sample_loop in main.c (project\pca10040\s132\arm5_no_packs) : 			rxflag = 0;

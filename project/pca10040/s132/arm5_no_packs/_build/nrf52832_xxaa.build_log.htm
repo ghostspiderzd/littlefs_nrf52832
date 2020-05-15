@@ -1,0 +1,329 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: ADF Administrator, ADSF, LIC=47GU5-GL0XK-Y8YFK-ZIKXI-HEEBZ-RXHWN
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.26.2.0
+Toolchain Path:  D:\program\keil5\install\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         
+Dialog DLL:      
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\CompanyFile\Continuousbloodpressure\code_v6\project\pca10040\s132\arm5_no_packs\ble_app_volmeas_pca10040_s132.uvprojx
+Project File Date:  04/28/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\program\keil5\install\ARM\ARMCC\Bin'
+Rebuild target 'nrf52832_xxaa'
+compiling DATA_FILTER.c...
+DATA_FILTER.h(6): warning:  #1295-D: Deprecated declaration medianFilter - give arg types
+  void medianFilter();
+DATA_FILTER.c: 1 warning, 0 errors
+compiling BLE_CRC.c...
+BLE_CRC.h(36): warning:  #1-D: last line of file ends without a newline
+  	
+BLE_CRC.c(56): warning:  #1-D: last line of file ends without a newline
+  } 
+BLE_CRC.c(49): warning:  #177-D: variable "i"  was declared but never referenced
+      int i;  
+BLE_CRC.c: 3 warnings, 0 errors
+compiling MLX90615.c...
+MLX90615.c(17): warning:  #550-D: variable "SlaveAddress"  was set but never used
+  	unsigned char 	SlaveAddress; 			//Contains device address
+MLX90615.c(18): warning:  #550-D: variable "command"  was set but never used
+  	unsigned char	command;	  			//Contains the access command
+MLX90615.c(19): warning:  #177-D: variable "data_temp"  was declared but never referenced
+  	unsigned int 	data_temp;		  			//Contains data value	
+MLX90615.c(39): warning:  #223-D: function "twi_mlx90615_transfer" declared implicitly
+      transfer_succeeded  = twi_mlx90615_transfer(0xb6, &register_address, 1, TWI_DONT_ISSUE_STOP);
+MLX90615.c(49): warning:  #223-D: function "twi_mlx90615_transfer" declared implicitly
+      return twi_mlx90615_transfer(0xb6, w2_data, 2, TWI_ISSUE_STOP);
+MLX90615.c: 5 warnings, 0 errors
+compiling Flash_driver.c...
+Flash_driver.c(66): warning:  #177-D: variable "ret_code"  was declared but never referenced
+          ret_code_t ret_code;
+Flash_driver.c(144): warning:  #177-D: variable "len"  was declared but never referenced
+     		 uint32_t len = ReadBytesNum, len_cut = 0;
+Flash_driver.c(144): warning:  #177-D: variable "len_cut"  was declared but never referenced
+     		 uint32_t len = ReadBytesNum, len_cut = 0;
+Flash_driver.c(146): warning:  #177-D: variable "pic_point"  was declared but never referenced
+           uint8_t *pic_point = pBuffer;
+Flash_driver.c(197): warning:  #940-D: missing return statement at end of non-void function "spi_flash_erase_addr" 
+  }
+Flash_driver.c(207): warning:  #940-D: missing return statement at end of non-void function "spi_flash_erase_chip" 
+  }
+Flash_driver.c(227): warning:  #940-D: missing return statement at end of non-void function "spi_flash_write_page" 
+  }
+Flash_driver.c: 7 warnings, 0 errors
+compiling main.c...
+BLE_CRC.h(36): warning:  #1-D: last line of file ends without a newline
+  	
+ADS1292R.h(45): warning:  #47-D: incompatible redefinition of macro "ADS_CLKSEL"  (declared at line 107 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_CLKSEL      								19
+ADS1292R.h(46): warning:  #47-D: incompatible redefinition of macro "ADS_RESET"  (declared at line 108 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_RESET      								18
+ADS1292R.h(47): warning:  #47-D: incompatible redefinition of macro "ADS_DRAY"  (declared at line 109 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_DRAY     								12
+ADS1292R.h(48): warning:  #47-D: incompatible redefinition of macro "ADS_COLCK"  (declared at line 110 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_COLCK     								22
+ADS1292R.h(49): warning:  #47-D: incompatible redefinition of macro "ADS_STAT"  (declared at line 111 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_STAT									17
+ADS1292R.h(51): warning:  #47-D: incompatible redefinition of macro "SPI_SCK_PIN"  (declared at line 113 of "..\..\..\..\components\boards\pca10040.h")
+  #define SPI_SCK_PIN 										14
+ADS1292R.h(52): warning:  #47-D: incompatible redefinition of macro "SPI_MISO_PIN"  (declared at line 114 of "..\..\..\..\components\boards\pca10040.h")
+  #define SPI_MISO_PIN 									13
+ADS1292R.h(53): warning:  #47-D: incompatible redefinition of macro "SPI_MOSI_PIN"  (declared at line 115 of "..\..\..\..\components\boards\pca10040.h")
+  #define SPI_MOSI_PIN									15
+ADS1292R.h(54): warning:  #47-D: incompatible redefinition of macro "SPI_SS_PIN"  (declared at line 116 of "..\..\..\..\components\boards\pca10040.h")
+  #define SPI_SS_PIN 										11
+ADS1292R.h(71): warning:  #1295-D: Deprecated declaration ADS_DATA_AVG - give arg types
+  void ADS_DATA_AVG();
+ADS1292R.h(72): warning:  #1-D: last line of file ends without a newline
+  #endif 
+DATA_FILTER.h(6): warning:  #1295-D: Deprecated declaration medianFilter - give arg types
+  void medianFilter();
+fs_config.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif _FS_CONFIG_H
+fs_config.h(29): warning:  #14-D: extra text after expected end of preprocessing directive
+  #endif _FS_CONFIG_H
+main.c(108): warning:  #520-D: initialization with "{...}" expected for aggregate object
+  uint8_t spi1rxbuff[SPI_BUF_SIXE] = 0;
+main.c(109): warning:  #520-D: initialization with "{...}" expected for aggregate object
+  uint8_t spi1txbuff[SPI_BUF_SIXE] = 0;
+main.c(113): warning:  #520-D: initialization with "{...}" expected for aggregate object
+  uint8_t userrxbuff[20] = 0;
+main.c(139): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		bat_value_phy=(float)(bat_value_adc&0x0fff)/413.7374;
+main.c(140): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		bat_value_per=(int8_t)(1476.4*bat_value_phy-174.31*bat_value_phy*bat_value_phy-3024.5);
+main.c(140): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		bat_value_per=(int8_t)(1476.4*bat_value_phy-174.31*bat_value_phy*bat_value_phy-3024.5);
+main.c(137): warning:  #177-D: variable "va_change"  was declared but never referenced
+  		float bat_value_phy,va_change;
+main.c(228): warning:  #550-D: variable "Ecg_date"  was set but never used
+  	   uint16_t Ecg_date = 0,Temp_date = 0;
+main.c(228): warning:  #177-D: variable "Temp_date"  was declared but never referenced
+  	   uint16_t Ecg_date = 0,Temp_date = 0;
+main.c(230): warning:  #177-D: variable "Temp_h"  was declared but never referenced
+  		 uint8_t  Temp_h,Temp_l;
+main.c(230): warning:  #177-D: variable "Temp_l"  was declared but never referenced
+  		 uint8_t  Temp_h,Temp_l;
+main.c(231): warning:  #177-D: variable "buff_cont"  was declared but never referenced
+  		 uint8_t buff_cont;
+main.c(232): warning:  #177-D: variable "debug_buff"  was declared but never referenced
+  		unsigned char debug_buff[4] = "test";
+main.c(233): warning:  #177-D: variable "debug_buff1"  was declared but never referenced
+  		unsigned char debug_buff1[5] = "test1";
+main.c(1124): warning:  #177-D: variable "Ecg_date"  was declared but never referenced
+  	     uint16_t Ecg_date = 0,Temp_date = 0;
+main.c(1124): warning:  #177-D: variable "Temp_date"  was declared but never referenced
+  	     uint16_t Ecg_date = 0,Temp_date = 0;
+main.c(1125): warning:  #177-D: variable "Res_date"  was declared but never referenced
+  		 uint32_t Res_date = 0;
+main.c(1126): warning:  #177-D: variable "Temp_h"  was declared but never referenced
+  		 uint8_t  Temp_h,Temp_l;
+main.c(1126): warning:  #177-D: variable "Temp_l"  was declared but never referenced
+  		 uint8_t  Temp_h,Temp_l;
+main.c(1127): warning:  #177-D: variable "buff_cont"  was declared but never referenced
+  		 uint8_t buff_cont;					
+main.c(1188): warning:  #177-D: variable "i"  was declared but never referenced
+  	unsigned char i = 0;
+main.c(1197): warning:  #177-D: variable "i"  was declared but never referenced
+      unsigned char i = 0;
+main.c(1225): warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "nrf_timer_event_handler_t"
+      err_code = nrf_drv_timer_init(&TIMER_SPI, &timer_cfg, timer_spi_event_handler);
+main.c(1221): warning:  #550-D: variable "err_code"  was set but never used
+  	ret_code_t err_code;
+main.c(1305): warning:  #177-D: variable "id"  was declared but never referenced
+  		uint8_t id;
+main.c(1307): warning:  #177-D: variable "MPU6050_INIT_FAIL_CONT"  was declared but never referenced
+  		uint8_t  MPU6050_INIT_FAIL_CONT = 0;
+main.c(1309): warning:  #177-D: variable "testspitx"  was declared but never referenced
+  		unsigned char testspitx[] = "hello world";
+main.c(1310): warning:  #177-D: variable "testspirx"  was declared but never referenced
+  		unsigned char testspirx[12];
+main.c(148): warning:  #177-D: function "uart_init"  was declared but never referenced
+  static void uart_init(void)
+main.c(664): warning:  #177-D: function "volmeas_timeout_handler"  was declared but never referenced
+  static void volmeas_timeout_handler(void * p_context)
+main.c(947): warning:  #177-D: function "leds_init"  was declared but never referenced
+  static void leds_init(void)
+main.c: 46 warnings, 0 errors
+compiling boards.c...
+compiling STM32SPI.c...
+STM32SPI.c(24): warning:  #177-D: variable "relax"  was declared but never referenced
+  			unsigned int relax = 0;
+STM32SPI.c(45): warning:  #1-D: last line of file ends without a newline
+  }
+STM32SPI.c: 2 warnings, 0 errors
+compiling bsp.c...
+compiling ble_conn_params.c...
+compiling ADS1292R.c...
+ADS1292R.h(45): warning:  #47-D: incompatible redefinition of macro "ADS_CLKSEL"  (declared at line 107 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_CLKSEL      								19
+ADS1292R.h(46): warning:  #47-D: incompatible redefinition of macro "ADS_RESET"  (declared at line 108 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_RESET      								18
+ADS1292R.h(47): warning:  #47-D: incompatible redefinition of macro "ADS_DRAY"  (declared at line 109 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_DRAY     								12
+ADS1292R.h(48): warning:  #47-D: incompatible redefinition of macro "ADS_COLCK"  (declared at line 110 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_COLCK     								22
+ADS1292R.h(49): warning:  #47-D: incompatible redefinition of macro "ADS_STAT"  (declared at line 111 of "..\..\..\..\components\boards\pca10040.h")
+  #define  ADS_STAT									17
+ADS1292R.h(51): warning:  #47-D: incompatible redefinition of macro "SPI_SCK_PIN"  (declared at line 113 of "..\..\..\..\components\boards\pca10040.h")
+  #define SPI_SCK_PIN 										14
+ADS1292R.h(52): warning:  #47-D: incompatible redefinition of macro "SPI_MISO_PIN"  (declared at line 114 of "..\..\..\..\components\boards\pca10040.h")
+  #define SPI_MISO_PIN 									13
+ADS1292R.h(53): warning:  #47-D: incompatible redefinition of macro "SPI_MOSI_PIN"  (declared at line 115 of "..\..\..\..\components\boards\pca10040.h")
+  #define SPI_MOSI_PIN									15
+ADS1292R.h(54): warning:  #47-D: incompatible redefinition of macro "SPI_SS_PIN"  (declared at line 116 of "..\..\..\..\components\boards\pca10040.h")
+  #define SPI_SS_PIN 										11
+ADS1292R.h(71): warning:  #1295-D: Deprecated declaration ADS_DATA_AVG - give arg types
+  void ADS_DATA_AVG();
+ADS1292R.h(72): warning:  #1-D: last line of file ends without a newline
+  #endif 
+ADS1292R.c: 11 warnings, 0 errors
+compiling bsp_nfc.c...
+compiling BLE_SET.c...
+BLE_SET.c(130): warning:  #177-D: variable "tx_power_level"  was declared but never referenced
+      int8_t tx_power_level = 4;
+BLE_SET.c(200): warning:  #223-D: function "SonPackSend_timers_start" declared implicitly
+  									SonPackSend_timers_start();
+BLE_SET.c(214): warning:  #223-D: function "SonPackSend_timers_stop" declared implicitly
+  		            		SonPackSend_timers_stop();
+BLE_SET.c(351): warning:  #223-D: function "Led_Display" declared implicitly
+  		Led_Display(BLE_LED_ADVERTISING);
+BLE_SET.c(367): warning:  #223-D: function "Led_Display" declared implicitly
+              Led_Display(BLE_LED_CONNECTED);
+BLE_SET.c(410): warning:  #223-D: function "SonPackSend_timers_stop" declared implicitly
+              			SonPackSend_timers_stop();
+BLE_SET.c: 6 warnings, 0 errors
+compiling ble_advdata.c...
+compiling ble_srv_common.c...
+compiling mpu6050.c...
+..\..\..\..\components\drivers_ext\mpu6050\mpu6050.c(44): warning:  #177-D: variable "inData"  was declared but never referenced
+  	unsigned char inData[8]={0x00,									//0x19
+..\..\..\..\components\drivers_ext\mpu6050\mpu6050.c: 1 warning, 0 errors
+compiling nrf_drv_common.c...
+compiling ble_volmeas.c...
+compiling nrf_drv_gpiote.c...
+compiling nrf_saadc.c...
+compiling nrf_drv_timer.c...
+compiling nrf_drv_twi.c...
+compiling twi_hw_master.c...
+compiling nrf_drv_clock.c...
+compiling nrf_drv_uart.c...
+compiling nrf_drv_saadc.c...
+compiling nrf_drv_spi.c...
+compiling sdk_errors.c...
+compiling app_button.c...
+compiling app_error.c...
+compiling hardfault_implementation.c...
+compiling app_timer.c...
+compiling app_error_weak.c...
+compiling nrf_assert.c...
+compiling app_util_platform.c...
+compiling app_fifo.c...
+compiling nrf_log_backend_serial.c...
+compiling ff.c...
+compiling lfs_util.c...
+assembling arm_startup_nrf52.s...
+compiling nrf_log_frontend.c...
+compiling softdevice_handler.c...
+compiling lfs.c...
+..\..\..\..\littlefs-master\littlefs-master\lfs.c(2125): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "superblock"  (declared at line 2144)
+            variable "valid"  (declared at line 2161)
+          goto cleanup;
+          ^
+..\..\..\..\littlefs-master\littlefs-master\lfs.c(2132): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "superblock"  (declared at line 2144)
+            variable "valid"  (declared at line 2161)
+          goto cleanup;
+          ^
+..\..\..\..\littlefs-master\littlefs-master\lfs.c(2137): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "superblock"  (declared at line 2144)
+            variable "valid"  (declared at line 2161)
+          goto cleanup;
+          ^
+..\..\..\..\littlefs-master\littlefs-master\lfs.c(2209): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "major_version"  (declared at line 2230)
+            variable "minor_version"  (declared at line 2231)
+          goto cleanup;
+          ^
+..\..\..\..\littlefs-master\littlefs-master\lfs.c(2217): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "major_version"  (declared at line 2230)
+            variable "minor_version"  (declared at line 2231)
+              goto cleanup;
+              ^
+..\..\..\..\littlefs-master\littlefs-master\lfs.c(2227): warning:  #546-D: transfer of control bypasses initialization of:
+            variable "major_version"  (declared at line 2230)
+            variable "minor_version"  (declared at line 2231)
+          goto cleanup;
+          ^
+..\..\..\..\littlefs-master\littlefs-master\lfs.c: 6 warnings, 0 errors
+compiling fs_driver.c...
+..\..\..\..\fatfs\fs_driver.h(41): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\..\..\fatfs\fs_driver.c(17): warning:  #177-D: variable "m_block_dev_sdc"  was declared but never referenced
+  NRF_BLOCK_DEV_SDC_DEFINE(
+..\..\..\..\fatfs\fs_driver.c: 2 warnings, 0 errors
+compiling diskio_blkdev.c...
+compiling system_nrf52.c...
+compiling fs_config.c...
+fs_config.h(29): warning:  #1-D: last line of file ends without a newline
+  #endif _FS_CONFIG_H
+fs_config.h(29): warning:  #14-D: extra text after expected end of preprocessing directive
+  #endif _FS_CONFIG_H
+fs_config.c(87): warning:  #177-D: variable "i"  was declared but never referenced
+      int i;
+fs_config.c(88): warning:  #177-D: variable "buf_len"  was declared but never referenced
+      uint32_t buf_len = 0;
+fs_config.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=19160 RO-data=1720 RW-data=200 ZI-data=16184  
+FromELF: creating hex file...
+".\_build\nrf52832_xxaa.axf" - 0 Error(s), 94 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM.CMSIS.4.5.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: NordicSemiconductor
+                http://developer.nordicsemi.com/nRF5_SDK/pieces/nRF_DeviceFamilyPack/NordicSemiconductor.nRF_DeviceFamilyPack.8.11.1.pack
+                NordicSemiconductor.nRF_DeviceFamilyPack.8.11.1
+                Nordic Semiconductor nRF ARM devices Device Family Pack.
+   * Component: Startup Version: 8.11.1
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_nrf52832_xxaa
+  D:\program\keil5\install\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\program\keil5\install\ARM\PACK\NordicSemiconductor\nRF_DeviceFamilyPack\8.11.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: NordicSemiconductor::Device:Startup:8.11.1
+      Source file:   Device\Source\system_nrf52.c
+      Include file:  Device\Include\system_nrf52.h
+      Source file:   Device\Source\arm\arm_startup_nrf52.s
+Build Time Elapsed:  00:00:21
+</pre>
+</body>
+</html>
